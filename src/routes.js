@@ -6,6 +6,13 @@ const database = new Database()
 
 export const routes = [
   {
+    method: 'GET',
+    path: buildRoutePath('/'),
+    handler: (req, res) => {
+      return res.end(JSON.stringify({ message: 'API de tarefas no ar' }))
+    },
+  },
+  {
     method: 'POST',
     path: buildRoutePath('/tasks'),
     handler: (req, res) => {
