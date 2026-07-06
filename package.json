@@ -1,0 +1,18 @@
+{
+  "name": "crud-de-tarefas",
+  "version": "1.0.0",
+  "description": "API de gerenciamento de tarefas (CRUD) com Node.js puro e persistência em arquivo",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "import-csv": "node import-csv.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parse": "^5.5.6"
+  }
+}
